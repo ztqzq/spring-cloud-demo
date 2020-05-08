@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ztqzq/spring-cloud-learn
+          username: 1093043163@qq.com
+          password: qzq1093043163
+          default-label: master #配置文件分支
+          search-paths: /**
+  rabbitmq:                 #本地环境不需要配置mq，但是需要启动mq,Springboot会自动连接本地mq
+    host: localhost
+    port: 5672
+    username: admin
+    password: admin
+  devtools:
+    restart:
+      enabled: false
+server:
+  port: 8888
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8071/eureka,http://localhost:8072/eureka
