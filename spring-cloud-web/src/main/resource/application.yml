@@ -18,9 +18,9 @@ spring:
     restart:
       enabled: false
 
-
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8071/eureka,http://localhost:8072/eureka
-
+server:
+  port: 8080
