@@ -1,6 +1,6 @@
 spring:
   application:
-    name: webapp
+    name: webapp2
   cloud:
     config:
       uri: http://localhost:8888
@@ -18,9 +18,10 @@ spring:
     restart:
       enabled: false
 
+
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8071/eureka,http://localhost:8072/eureka
 server:
-  port: 8080
+  port: 8089
