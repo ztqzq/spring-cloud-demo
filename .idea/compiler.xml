@@ -2,23 +2,29 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-cloud-config" />
         <module name="spring-cloud-eureka2" />
+        <module name="spring-cloud-test" />
         <module name="spring-cloud-web2" />
         <module name="spring-cloud-eureka" />
         <module name="spring-cloud-web" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring-cloud-test" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="spring-cloud-config" options="-parameters" />
       <module name="spring-cloud-eureka" options="-parameters" />
       <module name="spring-cloud-eureka2" options="-parameters" />
+      <module name="spring-cloud-test" options="-parameters" />
       <module name="spring-cloud-web" options="-parameters" />
       <module name="spring-cloud-web2" options="-parameters" />
     </option>

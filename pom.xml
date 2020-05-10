@@ -13,6 +13,8 @@
         <module>spring-cloud-web2</module>
         <module>spring-cloud-eureka</module>
         <module>spring-cloud-eureka2</module>
+        <module>spring-cloud-test</module>
+        <module>spring-cloud-test</module>
 
     </modules>
     <packaging>pom</packaging>
@@ -20,6 +22,7 @@
     <name>spring-cloud-demo Maven Webapp</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
+        
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -67,6 +70,13 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.18</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
     <!--指定远程仓库地址 -->

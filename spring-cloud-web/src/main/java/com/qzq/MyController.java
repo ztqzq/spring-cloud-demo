@@ -5,10 +5,16 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.context.annotation.Bean;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
+
+import java.util.HashMap;
+import java.util.Map;
 
 @Controller
 public class MyController {
@@ -50,8 +56,43 @@ class MyController2 {
     }
 
     @RequestMapping("/get2")
-    public String get2(){
+    public String get2() {
         String forObject = restTemplate.getForObject("http://webapp2/get", String.class);
+        return forObject;
+    }
+
+    @GetMapping("/get4/{id}")
+    public String get3(@PathVariable int id, String name, int age) {
+        String forObject = restTemplate.getForObject("http://webapp2/get4/{1}?name={2}&age={3}", String.class, id, name, age
+        );
+        return forObject;
+    }
+
+    @GetMapping("/get5/{id}")
+    public String get4(@PathVariable int id, String name, int age) {
+        Map<String, Object> map = new HashMap<>();
+        map.put("name", name);
+        map.put("age", age);
+        System.out.println(map);
+        String forObject = restTemplate.getForObject("http://webapp2/get4/" + id + "?name={name}&age={age}", String.class, map
+        );
+        return forObject;
+    }
+
+    @GetMapping("/get6/{id}")
+    public Bean1 get5(@PathVariable int id, String name, int age) {
+        Map<String, Object> map = new HashMap<>();
+        map.put("name", name);
+        map.put("age", age);
+        Bean1 forObject = restTemplate.getForObject("http://webapp2/get5/" + id + "?name={name}&age={age}", Bean1.class, map
+        );
+        ResponseEntity<Bean1> forEntity = restTemplate.getForEntity("http://webapp2/get5/" + id + "?name={name}&age={age}", Bean1.class, map
+        );
+        System.out.println(forEntity.getStatusCode());
+        System.out.println(forEntity.getStatusCodeValue());
+        System.out.println(forEntity.getHeaders());
+        System.out.println(forEntity.getBody());
+        System.out.println(forObject);
         return forObject;
     }
 }

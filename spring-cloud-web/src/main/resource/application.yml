@@ -9,14 +9,14 @@ spring:
   rabbitmq:                               #本地环境不需要配置mq
     host: 127.0.0.1
     port: 5672
-    username: demo
-    password: demo
+    username: admin
+    password: admin
   mvc:
     view:
       suffix: .html
   devtools:
     restart:
-      enabled: false
+      enabled: true
 
 eureka:
   client:

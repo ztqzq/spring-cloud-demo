@@ -1,24 +1,19 @@
 server:
   port: 8071
-
 spring:
   application:
     name: eureka
   devtools:
     restart:
       enabled: false
-
   rabbitmq:                               #本地环境不需要配置mq
     host: 127.0.0.1
     port: 5672
     username: demo
     password: demo
-
 eureka:
   instance:
     hostname: peer1
   client:
     service-url:
       defaultZone: http://peer2:8072/eureka/
-
-
