@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="spring-cloud-web-duplicate:war">
+    <output-path>$PROJECT_DIR$/spring-cloud-web-duplicate/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>spring-cloud-web-duplicate</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="spring-cloud-web.war">
+      <element id="artifact" artifact-name="spring-cloud-web-duplicate:war exploded" />
+    </root>
+  </artifact>
+</component>

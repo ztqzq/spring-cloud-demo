@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="spring-cloud-config:war">
+    <output-path>$PROJECT_DIR$/spring-cloud-config/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>spring-cloud-config</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="spring-cloud-config.war">
+      <element id="artifact" artifact-name="spring-cloud-config:war exploded" />
+    </root>
+  </artifact>
+</component>

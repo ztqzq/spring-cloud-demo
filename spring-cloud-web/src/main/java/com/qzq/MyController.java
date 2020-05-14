@@ -51,7 +51,9 @@ class MyController2 {
     private String port;
 
     @RequestMapping("/get")
-    public String get() {
+    public String get() throws InterruptedException {
+
+        //Thread.sleep(1000);
         return info + "\r\n" + info2 + "\r\n" + info3 + "\r\n" + port;
     }
 

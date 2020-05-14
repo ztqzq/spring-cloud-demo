@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-config/spring-cloud-config.iml" filepath="$PROJECT_DIR$/spring-cloud-config/spring-cloud-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-demo.iml" filepath="$PROJECT_DIR$/spring-cloud-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-eureka/spring-cloud-eureka.iml" filepath="$PROJECT_DIR$/spring-cloud-eureka/spring-cloud-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-eureka2/spring-cloud-eureka2.iml" filepath="$PROJECT_DIR$/spring-cloud-eureka2/spring-cloud-eureka2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-feign/spring-cloud-feign.iml" filepath="$PROJECT_DIR$/spring-cloud-feign/spring-cloud-feign.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud-test/spring-cloud-test.iml" filepath="$PROJECT_DIR$/spring-cloud-test/spring-cloud-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-web/spring-cloud-web.iml" filepath="$PROJECT_DIR$/spring-cloud-web/spring-cloud-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-web-duplicate/spring-cloud-web-duplicate.iml" filepath="$PROJECT_DIR$/spring-cloud-web-duplicate/spring-cloud-web-duplicate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-web2/spring-cloud-web2.iml" filepath="$PROJECT_DIR$/spring-cloud-web2/spring-cloud-web2.iml" />
     </modules>
   </component>
 </project>

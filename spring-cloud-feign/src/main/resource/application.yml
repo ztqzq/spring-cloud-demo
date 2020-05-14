@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: webapp2
+  cloud:
+    config:
+      uri: http://localhost:8888
+      profile: dev
+      label: master
+  rabbitmq:                               #本地环境不需要配置mq
+    host: 127.0.0.1
+    port: 5672
+    username: demo
+    password: demo
+  mvc:
+    view:
+      suffix: .html
+  devtools:
+    restart:
+      enabled: true
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8071/eureka,http://localhost:8072/eureka
+server:
+  port: 8089
