@@ -21,4 +21,11 @@ public class AppTest {
         System.out.println(user1.hashCode() + " " + user2.hashCode());
         System.out.println(user1.equals(user2));
     }
+    @Test
+    public void test3(){
+       Object o = new User();
+        String name = o.getClass().getName();
+        System.out.println(name);
+
+    }
 }

@@ -8,11 +8,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-cloud-config" />
         <module name="spring-cloud-eureka2" />
-        <module name="spring-cloud-test" />
         <module name="spring-cloud-feign" />
         <module name="spring-cloud-web2" />
+        <module name="spring-cloud-stream" />
+        <module name="spring-cloud-zuul" />
+        <module name="spring-cloud-test" />
         <module name="spring-cloud-web" />
         <module name="spring-cloud-web-duplicate" />
+        <module name="spring-cloud-stream-2" />
         <module name="spring-cloud-eureka" />
       </profile>
     </annotationProcessing>
@@ -22,10 +25,14 @@
       <module name="spring-cloud-eureka" target="1.8" />
       <module name="spring-cloud-eureka2" target="1.8" />
       <module name="spring-cloud-feign" target="1.8" />
+      <module name="spring-cloud-feign (1)" target="1.8" />
+      <module name="spring-cloud-stream" target="1.8" />
+      <module name="spring-cloud-stream-2" target="1.8" />
       <module name="spring-cloud-test" target="1.8" />
       <module name="spring-cloud-web" target="1.8" />
       <module name="spring-cloud-web-duplicate" target="1.8" />
       <module name="spring-cloud-web2" target="1.8" />
+      <module name="spring-cloud-zuul" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -33,10 +40,15 @@
       <module name="spring-cloud-config" options="-parameters" />
       <module name="spring-cloud-eureka" options="-parameters" />
       <module name="spring-cloud-eureka2" options="-parameters" />
+      <module name="spring-cloud-feign" options="-parameters" />
+      <module name="spring-cloud-feign (1)" options="-parameters" />
+      <module name="spring-cloud-stream" options="-parameters" />
+      <module name="spring-cloud-stream-2" options="-parameters" />
       <module name="spring-cloud-test" options="-parameters" />
       <module name="spring-cloud-web" options="-parameters" />
       <module name="spring-cloud-web-duplicate" options="-parameters" />
       <module name="spring-cloud-web2" options="-parameters" />
+      <module name="spring-cloud-zuul" options="-parameters" />
     </option>
   </component>
 </project>

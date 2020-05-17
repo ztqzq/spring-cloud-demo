@@ -5,9 +5,13 @@
     <file url="file://$PROJECT_DIR$/spring-cloud-config" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-eureka" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-eureka2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-feign" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-stream" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-stream-2" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-test" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-web" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-web-duplicate" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-web2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-zuul" charset="UTF-8" />
   </component>
 </project>

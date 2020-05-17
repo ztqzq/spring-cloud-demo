@@ -1,0 +1,21 @@
+server:
+  port: 8079
+spring:
+  application:
+    name: gateway
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8071/eureka,http://localhost:8072/eureka
+
+zuul:
+  routes:
+    api-a:
+      serviceId: WEBAPP
+      path: /api-a/**
+    api-b:
+      serviceId: WEBAPP
+      path: /api-b/**
+
+
+
